@@ -19,9 +19,9 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="bg-sidebar fixed top-0 left-0 h-screen w-20 md:w-72 z-40 flex flex-col shadow-lg overflow-hidden transition-all duration-300">
+    <header className="bg-slate-950 fixed top-0 left-0 h-screen w-20 md:w-72 z-40 flex flex-col shadow-lg overflow-hidden transition-all duration-300">
       <div className="flex flex-col items-center py-8">
-        <div className="w-24 h-24 rounded-full border-4 border-gray-600 overflow-hidden mb-3">
+        <div className="size-28 rounded-full border-4 border-slate-800 overflow-hidden mb-3">
           <Image
             src="/juwon.png"
             alt="Profile"
@@ -31,12 +31,12 @@ const Navbar = () => {
           />
         </div>
         <h1 className="text-xl font-bold text-white mt-2 hidden md:block">
-          Your Name
+          Ola-Oluwajuwon
         </h1>
 
         <div className="mt-3 space-x-3 hidden md:flex">
           {/* Social Links */}
-          <a
+          <Link
             href="#"
             className="text-gray-400 hover:text-white transition-colors"
           >
@@ -49,8 +49,8 @@ const Navbar = () => {
             >
               <path d="M8.29 20.251c7.547 0..." />
             </svg>
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="text-gray-400 hover:text-white transition-colors"
           >
@@ -67,8 +67,8 @@ const Navbar = () => {
                 clipRule="evenodd"
               />
             </svg>
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="text-gray-400 hover:text-white transition-colors"
           >
@@ -85,7 +85,7 @@ const Navbar = () => {
                 clipRule="evenodd"
               />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
 
