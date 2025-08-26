@@ -1,86 +1,123 @@
-"use client";
-
-import React from "react";
 import Link from "next/link";
+import { Github, Linkedin, Twitter, Mail } from "lucide-react";
 
-const Footer = () => {
+const quickLinks = [
+  { name: "About", href: "/about" },
+  { name: "Portfolio", href: "/portfolio" },
+  { name: "Services", href: "/services" },
+  { name: "Blog", href: "/blog" },
+  { name: "Contact", href: "/contact" },
+];
+
+const socialLinks = [
+  { name: "GitHub", href: "https://github.com", icon: Github },
+  { name: "LinkedIn", href: "https://linkedin.com", icon: Linkedin },
+  { name: "Twitter", href: "https://twitter.com", icon: Twitter },
+  { name: "Email", href: "mailto:hello@gobetween.dev", icon: Mail },
+];
+
+export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-white py-8 mt-20">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="text-center md:text-left mb-4 md:mb-0">
-            <h2 className="text-2xl font-bold">go-between.me</h2>
-            <p className="text-gray-400 mt-2">
-              Connecting ideas and technology
+    <footer className="border-t bg-muted/30">
+      <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* Brand */}
+          <div className="space-y-4">
+            <Link href="/" className="flex items-center space-x-2">
+              <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center">
+                <span className="text-lg font-bold text-primary-foreground">
+                  G
+                </span>
+              </div>
+              <span className="text-xl font-bold gradient-text">
+                Go Between
+              </span>
+            </Link>
+            <p className="text-sm text-muted-foreground max-w-xs">
+              Professional portfolio showcasing web development, UI/UX design,
+              and automation services.
             </p>
           </div>
 
-          <div className="flex space-x-4">
-            <Link
-              href="#"
-              aria-label="Visit our Twitter profile"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              <svg
-                className="w-6 h-6"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348..." />
-              </svg>
-            </Link>
+          {/* Quick Links */}
+          <div className="space-y-4">
+            <h3 className="text-sm font-semibold text-foreground">
+              Quick Links
+            </h3>
+            <ul className="space-y-2">
+              {quickLinks.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-            <Link
-              href="#"
-              aria-label="Visit our GitHub profile"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              <svg
-                className="w-6 h-6"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425..."
-                />
-              </svg>
-            </Link>
+          {/* Services */}
+          <div className="space-y-4">
+            <h3 className="text-sm font-semibold text-foreground">Services</h3>
+            <ul className="space-y-2">
+              <li className="text-sm text-muted-foreground">Web Development</li>
+              <li className="text-sm text-muted-foreground">UI/UX Design</li>
+              <li className="text-sm text-muted-foreground">Automation</li>
+              <li className="text-sm text-muted-foreground">Consulting</li>
+            </ul>
+          </div>
 
-            <Link
-              href="#"
-              aria-label="Visit our LinkedIn profile"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              <svg
-                className="w-6 h-6"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14..."
-                />
-              </svg>
-            </Link>
+          {/* Social & Contact */}
+          <div className="space-y-4">
+            <h3 className="text-sm font-semibold text-foreground">Connect</h3>
+            <div className="flex space-x-4">
+              {socialLinks.map((social) => {
+                const Icon = social.icon;
+                return (
+                  <a
+                    key={social.name}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-foreground transition-colors duration-200"
+                    aria-label={social.name}
+                  >
+                    <Icon className="h-5 w-5" />
+                  </a>
+                );
+              })}
+            </div>
+            <p className="text-sm text-muted-foreground">hello@gobetween.dev</p>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-6 text-center">
-          <p className="text-gray-400">
-            &copy; {currentYear} go-between.me. All Rights Reserved.
-          </p>
+        {/* Bottom Bar */}
+        <div className="mt-8 pt-8 border-t">
+          <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+            <p className="text-sm text-muted-foreground">
+              © {currentYear} Go Between. All rights reserved.
+            </p>
+            <div className="flex items-center space-x-6 text-sm text-muted-foreground">
+              <Link
+                href="/privacy"
+                className="hover:text-foreground transition-colors duration-200"
+              >
+                Privacy Policy
+              </Link>
+              <Link
+                href="/terms"
+                className="hover:text-foreground transition-colors duration-200"
+              >
+                Terms of Service
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

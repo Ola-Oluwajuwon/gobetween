@@ -1,40 +1,71 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/providers/ThemeProvider";
+import { ColorSchemeProvider } from "@/components/providers/ColorSchemeProvider";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
-import Navbar from "@/components/Layout/Navbar";
-import Footer from "@/components/Layout/Footer";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Go Between",
-  description: "Your link to smarter solutions.",
+  title: "Go Between - Professional Portfolio",
+  description:
+    "Professional portfolio showcasing web development, UI/UX design, and automation services. View my projects, skills, and get in touch for collaboration opportunities.",
+  keywords:
+    "portfolio, web development, UI/UX, automation, React, Next.js, TypeScript",
+  authors: [{ name: "Go Between" }],
+  creator: "Go Between",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://gobetween.vercel.app",
+    title: "Go Between - Professional Portfolio",
+    description:
+      "Professional portfolio showcasing web development, UI/UX design, and automation services.",
+    siteName: "Go Between Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Go Between - Professional Portfolio",
+    description:
+      "Professional portfolio showcasing web development, UI/UX design, and automation services.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen"`}
-      >
-        <Navbar />
-        <main className="flex-grow ml-20 md:ml-72">{children}</main>
-        <div className="ml-20 md:ml-72">
-          <Footer />
-        </div>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.className} antialiased`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <ColorSchemeProvider>
+            <div className="min-h-screen bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100">
+              <Header />
+              <main className="flex-1">{children}</main>
+              <Footer />
+            </div>
+          </ColorSchemeProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
