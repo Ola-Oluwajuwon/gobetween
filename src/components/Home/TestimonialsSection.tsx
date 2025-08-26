@@ -157,7 +157,7 @@ export default function TestimonialsSection() {
           <div className="flex items-center justify-center mt-8 space-x-4">
             <button
               onClick={prevTestimonial}
-              className="p-2 rounded-full border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+              className="p-2 rounded-full border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200 hover:cursor-pointer"
               aria-label="Previous testimonial"
             >
               <ChevronLeft className="w-5 h-5" />
@@ -169,7 +169,7 @@ export default function TestimonialsSection() {
                 <button
                   key={index}
                   onClick={() => setCurrentIndex(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-200 ${
+                  className={`w-3 h-3 rounded-full transition-all duration-200 hover:cursor-pointer ${
                     index === currentIndex
                       ? "bg-purple-600 scale-125"
                       : "bg-gray-400/30 hover:bg-gray-400/50 dark:bg-gray-600/30 dark:hover:bg-gray-600/50"
@@ -181,7 +181,7 @@ export default function TestimonialsSection() {
 
             <button
               onClick={nextTestimonial}
-              className="p-2 rounded-full border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+              className="p-2 rounded-full border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200 hover:cursor-pointer"
               aria-label="Next testimonial"
             >
               <ChevronRight className="w-5 h-5" />

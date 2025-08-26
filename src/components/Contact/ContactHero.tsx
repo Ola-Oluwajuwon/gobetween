@@ -1,28 +1,28 @@
-"use client"
+"use client";
 
-import { motion } from 'framer-motion'
-import { Mail, MessageSquare, Phone } from 'lucide-react'
+import { motion } from "framer-motion";
+import { Mail, MessageSquare, Phone } from "lucide-react";
 
 const contactMethods = [
   {
     icon: Mail,
-    title: 'Email',
-    description: 'hello@gobetween.dev',
-    action: 'Send me an email'
+    title: "Email",
+    description: "hello@gobetween.dev",
+    action: "Send me an email",
   },
   {
     icon: MessageSquare,
-    title: 'Live Chat',
-    description: 'Available during business hours',
-    action: 'Start a conversation'
+    title: "Live Chat",
+    description: "Available during business hours",
+    action: "Start a conversation",
   },
   {
     icon: Phone,
-    title: 'Phone',
-    description: '+1 (555) 123-4567',
-    action: 'Call me directly'
-  }
-]
+    title: "Phone",
+    description: "+1 (555) 123-4567",
+    action: "Call me directly",
+  },
+];
 
 export default function ContactHero() {
   return (
@@ -44,14 +44,16 @@ export default function ContactHero() {
             {/* Main content */}
             <div className="space-y-6">
               <h1 className="text-4xl md:text-6xl font-bold">
-                Let's <span className="gradient-text">Connect</span>
+                Let&apos;s <span className="gradient-text">Connect</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Ready to start your next project? Have a question about my services? 
-                I'd love to hear from you and discuss how we can work together.
+                Ready to start your next project? Have a question about my
+                services? I&apos;d love to hear from you and discuss how we can
+                work together.
               </p>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                I'm always excited to explore new opportunities and help bring your ideas to life.
+                I&apos;m always excited to explore new opportunities and help
+                bring your ideas to life.
               </p>
             </div>
 
@@ -74,8 +76,10 @@ export default function ContactHero() {
                     <method.icon className="h-8 w-8 text-primary" />
                   </div>
                   <h3 className="text-lg font-semibold mb-2">{method.title}</h3>
-                  <p className="text-muted-foreground text-sm mb-3">{method.description}</p>
-                  <button className="text-primary hover:text-primary/80 text-sm font-medium transition-colors">
+                  <p className="text-muted-foreground text-sm mb-3">
+                    {method.description}
+                  </p>
+                  <button className="text-primary hover:text-primary/80 text-sm font-medium transition-colors hover:cursor-pointer">
                     {method.action}
                   </button>
                 </motion.div>
@@ -85,5 +89,5 @@ export default function ContactHero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
