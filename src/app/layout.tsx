@@ -50,16 +50,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} antialiased`}>
+    <html lang="en" suppressHydrationWarning className="h-full">
+      <body className={`${inter.className} antialiased h-full`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="system"
           enableSystem
-          disableTransitionOnChange
+          storageKey="gobetween-theme"
         >
           <ColorSchemeProvider>
-            <div className="min-h-screen bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100">
+            <div className="min-h-full flex flex-col bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100">
               <Header />
               <main className="flex-1">{children}</main>
               <Footer />
