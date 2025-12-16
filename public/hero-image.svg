@@ -1,0 +1,25 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Top left quarter circle -->
+  <path d="M 0,0 L 260,0 Q 260,260 0,260 Z" fill="#6B7F6B"/>
+  
+  <!-- Top middle rotated square -->
+  <path d="M 260,0 L 512,0 L 386,252 L 134,252 Z" fill="#8B9D8B"/>
+  
+  <!-- Top right half circle -->
+  <path d="M 512,0 Q 800,0 800,260 Q 800,520 512,520 Z" fill="#B5C9B5"/>
+  
+  <!-- Middle left frame square -->
+  <path d="M 5,270 L 255,270 L 255,520 L 5,520 Z M 32,297 L 228,297 L 228,493 L 32,493 Z" fill="#6B7F6B"/>
+  
+  <!-- Middle center circle -->
+  <circle cx="386" cy="395" r="125" fill="#B5C9B5"/>
+  
+  <!-- Bottom left quarter circle -->
+  <path d="M 0,520 Q 260,520 260,800 L 0,800 Z" fill="#8B9D8B"/>
+  
+  <!-- Bottom middle triangle -->
+  <path d="M 260,800 L 512,800 L 386,548 Z" fill="#B5C9B5"/>
+  
+  <!-- Bottom right quarter circle -->
+  <path d="M 512,520 Q 800,520 800,800 L 512,800 Z" fill="#6B7F6B"/>
+</svg>

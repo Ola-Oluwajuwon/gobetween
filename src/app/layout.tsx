@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/providers/ThemeProvider";
-import { ColorSchemeProvider } from "@/components/providers/ColorSchemeProvider";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
@@ -50,22 +48,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning className="h-full">
+    <html lang="en" className="h-full">
       <body className={`${inter.className} antialiased h-full`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          storageKey="gobetween-theme"
-        >
-          <ColorSchemeProvider>
-            <div className="min-h-full flex flex-col bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100">
-              <Header />
-              <main className="flex-1">{children}</main>
-              <Footer />
-            </div>
-          </ColorSchemeProvider>
-        </ThemeProvider>
+        <div className="min-h-full flex flex-col bg-white text-gray-900">
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
