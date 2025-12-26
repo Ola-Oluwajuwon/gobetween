@@ -22,69 +22,63 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "best-tech",
-    title: "Best Technologies Ltd",
+    title: "Best Technologies Ltd.",
     shortDescription:
-      "Enterprise digital transformation platform empowering businesses with AI-driven solutions and services.",
-    category: "Web Development",
+      "Redesigned and developed the website for a leading digital transformation company.",
+    category: "Web Design and Development",
     image: "/portfolio/portfolio-01-best-tech.png",
     featured: true,
     liveUrl: "https://app.besttechnologiesltd.com/",
-    fullDescription:
-      "Best Technologies Ltd is a comprehensive digital transformation platform designed to help businesses leverage cutting-edge technology and AI to achieve sustainable growth. The platform showcases services including web development, mobile apps, AI integration, and digital marketing, while featuring a robust portfolio system and client testimonials.",
-    challenge:
-      "Businesses struggle to find a single, trusted partner that can handle their complete digital transformation journey—from web development to AI integration to digital marketing—while maintaining high quality and innovative solutions.",
-    solution:
-      "Developed a sophisticated multi-service platform featuring an intuitive service catalog, dynamic portfolio showcase, integrated contact forms, and comprehensive case studies. The platform uses modern web technologies to provide fast, responsive experiences while showcasing the company's expertise through real-world projects and client testimonials.",
-    outcome:
-      "Successfully created a central hub that attracts and converts potential clients, showcases diverse project portfolio, and positions Best Technologies as a leading digital transformation partner. The platform effectively communicates complex technical services through clear, engaging content and visual design.",
-    technologies: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Framer Motion",
-      "Node.js",
-      "MongoDB",
-    ],
-    duration: "6 months",
-    role: "Full-Stack Developer",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    duration: "2 months",
+    role: "Frontend Developer Intern",
     screenshots: [
-      "/api/placeholder/1200/800",
-      "/api/placeholder/1200/800",
-      "/api/placeholder/1200/800",
+      "/portfolio/portfolio-01-best-tech-01.png",
+      "/portfolio/portfolio-01-best-tech-02.png",
+      "/portfolio/portfolio-01-best-tech-03.png",
     ],
+    fullDescription:
+      "Best Technologies Ltd. is a digital transformation company in Ibadan. The company helps businesses leverage cutting-edge technology and AI to achieve sustainable growth. The platform I built for them showcases services including web development, mobile apps, AI integration, digital marketing, and digital trainings while featuring a robust portfolio system and client testimonials.",
+    challenge:
+      "Best Technologies Ltd. needed a modern, user-friendly website to effectively showcase their diverse range of digital transformation services and projects. The existing site was outdated, WordPress-based, and did not adequately represent the company’s expertise anymore.",
+    solution:
+      "Developed a sophisticated multi-service platform featuring an intuitive service catalog, dynamic portfolio showcase, integrated contact forms, and comprehensive case studies. The platform uses modern web technologies to provide fast, responsive experiences while showcasing the company's expertise through real-world projects and client testimonials. I also implemented SEO best practices to enhance online visibility and user engagement tracking for continuous improvement.",
+    outcome:
+      "Successfully created a central hub that attracts and converts potential clients, showcases diverse project portfolio, and positions Best Technologies Ltd. as a leading digital transformation partner. The platform effectively communicates complex technical services through clear, engaging content and visual design.",
   },
   {
-    id: "subeb",
-    title: "SUBEB Result Management",
+    id: "ourproperty",
+    title: "Our Property NG",
     shortDescription:
-      "Automated student result management system for schools with secure uploads and analytics.",
-    category: "Education Technology",
-    image: "/portfolio/portfolio-02-subeb.png",
+      "Joined a hub of 12 technical team to build a comprehensive estate management solution startup.",
+    category: "Property Tech",
+    image: "/portfolio/portfolio-05-ourproperty.png",
     featured: true,
-    liveUrl: "https://subeb.besttechnologiesltd.com/",
-    fullDescription:
-      "SUBEB is a comprehensive result management platform designed to help schools and educational institutions automate result uploads, performance tracking, and academic reporting. The system provides a secure, centralized dashboard for managing student results across multiple classes, terms, and subjects.",
-    challenge:
-      "Schools and educational institutions were managing student results using scattered spreadsheets, leading to data inconsistencies, manual errors, security concerns, and difficulty tracking performance trends across terms and classes.",
-    solution:
-      "Built a secure web platform with role-based access control, bulk result upload functionality, real-time validation, automated report generation, and comprehensive analytics dashboard. The system includes workflow management for result approval, audit trails, and encrypted data storage.",
-    outcome:
-      "Transformed result management from manual spreadsheets to an automated, secure system. Schools can now upload results 5x faster, track performance trends in real-time, generate instant reports, and maintain complete data security with automatic backups and encryption.",
+    liveUrl: "https://ourproperty.ng/",
     technologies: [
       "Next.js",
-      "TypeScript",
-      "PostgreSQL",
-      "Tailwind CSS",
+      "React",
       "Node.js",
-      "Excel Integration",
+      "PostgreSQL",
+      "Mobile Apps",
+      "Cloud Storage",
+      "Payment Integration",
     ],
-    duration: "4 months",
-    role: "Lead Full-Stack Developer",
+    duration: "1 months",
+    role: "Next.js Developer",
     screenshots: [
-      "/api/placeholder/1200/800",
-      "/api/placeholder/1200/800",
-      "/api/placeholder/1200/800",
+      "/portfolio/portfolio-05-ourproperty-01.png",
+      "/portfolio/portfolio-05-ourproperty-02.png",
+      "/portfolio/portfolio-05-ourproperty-03.png",
     ],
+    fullDescription:
+      "Our Property NG is a comprehensive property technology platform designed to digitize and automate real estate and property management operations across Nigeria. The software serves property managers, developers, and hospitality managers with features including tenant management, payment automation, custom branding, mobile apps, and analytics—currently managing 1.65M+ properties across 5,700+ companies.",
+    challenge:
+      "Real estate professionals in Nigeria were drowning in paperwork and manual processes, struggling to efficiently manage properties, tenants, landlords, payments, and staff coordination. Traditional methods were time-consuming, error-prone, and limited business scalability across multiple properties and locations.",
+    solution:
+      "Built a fully customizable cloud-based platform with role-based access control, automated payment collection, custom domain integration, mobile applications for tenants and managers, visitor management systems, and comprehensive dashboards. The platform includes features for property listings, tenant onboarding, maintenance tracking, document management, and real-time notifications.",
+    outcome:
+      "Transformed property management operations for thousands of Nigerian businesses, managing over 1.65 million properties across 5,700+ offices. The platform reduced administrative overhead by 70%, automated rent collection with instant notifications, provided clients with branded experiences, and scaled efficiently across property managers, developers, and hospitality businesses.",
   },
   {
     id: "supreme-court-cases",
@@ -154,6 +148,39 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: "subeb",
+    title: "SUBEB Result Management",
+    shortDescription:
+      "Automated student result management system for schools with secure uploads and analytics.",
+    category: "Education Technology",
+    image: "/portfolio/portfolio-02-subeb.png",
+    featured: true,
+    liveUrl: "https://subeb.besttechnologiesltd.com/",
+    fullDescription:
+      "SUBEB is a comprehensive result management platform designed to help schools and educational institutions automate result uploads, performance tracking, and academic reporting. The system provides a secure, centralized dashboard for managing student results across multiple classes, terms, and subjects.",
+    challenge:
+      "Schools and educational institutions were managing student results using scattered spreadsheets, leading to data inconsistencies, manual errors, security concerns, and difficulty tracking performance trends across terms and classes.",
+    solution:
+      "Built a secure web platform with role-based access control, bulk result upload functionality, real-time validation, automated report generation, and comprehensive analytics dashboard. The system includes workflow management for result approval, audit trails, and encrypted data storage.",
+    outcome:
+      "Transformed result management from manual spreadsheets to an automated, secure system. Schools can now upload results 5x faster, track performance trends in real-time, generate instant reports, and maintain complete data security with automatic backups and encryption.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Node.js",
+      "Excel Integration",
+    ],
+    duration: "4 months",
+    role: "Lead Full-Stack Developer",
+    screenshots: [
+      "/api/placeholder/1200/800",
+      "/api/placeholder/1200/800",
+      "/api/placeholder/1200/800",
+    ],
+  },
+  {
     id: "smarteduhub",
     title: "Smart Edu Hub",
     shortDescription:
@@ -194,7 +221,7 @@ export const projects: Project[] = [
       "Digital payment solution simplifying transactions with secure, fast, and reliable processing.",
     category: "Fintech",
     image: "/portfolio/portfolio-03-smipay.png",
-    featured: true,
+    featured: false,
     liveUrl: "https://smipay.vercel.app/",
     githubUrl: "https://github.com/Ola-Oluwajuwon/smipay",
     fullDescription:

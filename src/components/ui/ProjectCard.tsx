@@ -35,15 +35,17 @@ export function ProjectCard({
 
         {/* Card Content */}
         <div className="space-y-3">
-          <h3 className="text-lg font-semibold">{title}</h3>
+          <h3 className="text-lg font-semibold text-brand-primary">{title}</h3>
 
-          <p className="text-gray-400 text-sm leading-relaxed">{description}</p>
+          <p className="text-brand-black text-sm leading-relaxed">
+            {description}
+          </p>
 
           <Button
             onClick={onClick}
             variant="outline"
             size="sm"
-            className="w-full mt-4 border-gray-600 text-gray-300 hover:bg-gray-700/50"
+            className="w-full mt-4"
           >
             View Project
           </Button>
