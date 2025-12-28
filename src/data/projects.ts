@@ -127,8 +127,11 @@ export const projects: Project[] = [
       "Expo Go",
       "React Native",
       "TypeScript",
-      "RESTful APIs",
       "CSS-in-JS",
+      "RESTful APIs",
+      "ExpressJS",
+      "Supabase",
+      "Neon",
     ],
     duration: "2 months",
     role: "Mobile App & Backend Developer",
@@ -150,19 +153,11 @@ export const projects: Project[] = [
     id: "best-in-print-academy",
     title: "Best In Print Academy",
     shortDescription:
-      "Professional training platform for print technology, design, and publishing courses in Africa.",
-    category: "Education",
+      "Built an educational platform offering skill acquisition programs in printing technology with WordPress.",
+    category: "Print Technology Education",
     image: "/portfolio/portfolio-04-bestinprintacademy.png",
     featured: true,
     liveUrl: "https://bestinprintacademy.com/",
-    fullDescription:
-      "Best In Print Academy (BIPA) bridges the knowledge gap in the African printing industry through comprehensive skill acquisition programs in printing technology. The platform provides course catalogs, virtual workshops, certification programs, and resource materials for students pursuing careers in print technology and design.",
-    challenge:
-      "Africa's printing industry faced a significant skills gap with limited access to professional training programs. Aspiring print technologists and designers struggled to find structured, industry-relevant education that combines theoretical knowledge with practical skills.",
-    solution:
-      "Built a comprehensive educational platform featuring course browsing, online enrollment, resource libraries, virtual workshop scheduling, student portals for progress tracking, and digital certification. The platform connects students with industry experts and provides accessible, quality education in print technology.",
-    outcome:
-      "Successfully established a central hub for print technology education in Africa, serving hundreds of students annually. The platform reduced barriers to entry in the printing industry, improved skill levels across the sector, and helped students earn recognized certifications that advance their careers.",
     technologies: [
       "WordPress",
       "WooCommerce",
@@ -171,13 +166,21 @@ export const projects: Project[] = [
       "LearnDash",
       "MySQL",
     ],
-    duration: "5 months",
-    role: "Full-Stack Developer & Technical Lead",
+    duration: "2 weeks",
+    role: "Web Designer & Developer",
     screenshots: [
-      "/api/placeholder/1200/800",
-      "/api/placeholder/1200/800",
-      "/api/placeholder/1200/800",
+      "/portfolio/portfolio-04-bestinprintacademy.png",
+      "/portfolio/portfolio-04-bestinprintacademy-01.png",
+      "/portfolio/portfolio-04-bestinprintacademy-02.png",
     ],
+    fullDescription:
+      "Best In Print Academy (BIPA) bridges the knowledge gap in the African printing industry through comprehensive skill acquisition programs in printing technology. The platform provides course catalogs, virtual workshops, certification programs, and resource materials for students pursuing careers in print technology and design.",
+    challenge:
+      "BIPA needed an online platform to deliver educational content and certification programs to students and to establish their online presence across Africa. The challenge was to create an engaging, user-friendly website that could handle course management, student enrollment, resource distribution, and workshops.",
+    solution:
+      "Developed a WordPress-based platform that established BIPA's online presence and implemented student enrollment systems.",
+    outcome:
+      "Successfully launched the Best In Print Academy website, providing a centralized hub for students to access resources and enrolment instructions. The platform enhanced BIPA's visibility in the printing education sector and facilitated skill development for aspiring print technology professionals across Africa.",
   },
   {
     id: "subeb",
@@ -219,7 +222,7 @@ export const projects: Project[] = [
       "Modern educational platform streamlining learning, collaboration, and resource management for institutions.",
     category: "Education Technology",
     image: "/portfolio/portfolio-05-smarteduhub.png",
-    featured: true,
+    featured: false,
     githubUrl: "https://github.com/best-technologies/smarteduhub-web-app",
     fullDescription:
       "SmartEduHub is a comprehensive educational platform designed to streamline learning, collaboration, and resource management for students and educators. The system includes user authentication, course management, assignment submission and grading, real-time notifications, discussion forums, messaging, and document management.",
