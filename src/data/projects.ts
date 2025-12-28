@@ -98,21 +98,21 @@ export const projects: Project[] = [
       "Wikidata API",
       "CSS3",
     ],
-    duration: "1 week",
+    duration: "1 week (Hackathon Project)",
     role: "Fullstack Developer",
     screenshots: [
-      "/api/placeholder/1200/800",
-      "/api/placeholder/1200/800",
-      "/api/placeholder/1200/800",
+      "/portfolio/portfolio-04-opensource-01.png",
+      "/portfolio/portfolio-04-opensource-03.png",
+      "/portfolio/portfolio-04-opensource-02.png",
     ],
     fullDescription:
       "The Supreme Court Cases (SCC) Web App is an open-source platform providing a comprehensive, searchable database of Supreme Court cases in Ghana. Built for Global Open Initiative Foundation (GOiF), it queries Wikidata to provide detailed case information including citations, courts, judges, and majority opinions.",
     challenge:
       "Legal professionals, students, and citizens in Ghana lacked easy access to Supreme Court case information. Existing resources were fragmented, difficult to search, and not optimized for modern web experiences, creating barriers to legal research and transparency.",
     solution:
-      "Developed a modern, responsive web application with an elegant search interface, real-time search results, comprehensive case data display, and accessibility features. The platform integrates with Wikidata's extensive legal database and presents information in an intuitive, user-friendly format with smooth animations and micro-interactions.",
+      "(Under the supervision of the Wikidata Community): worked in a team of 30 technical members to build a user-friendly web application that integrates with the Wikidata API to fetch and display Supreme Court Case data. Implemented advanced search functionality, filtering options, and detailed case views to enhance usability. The platform features a responsive design for accessibility across devices and includes documentation for future contributions.",
     outcome:
-      "Created an accessible platform that democratizes access to legal information in Ghana. The open-source nature allows continuous community improvement while providing fast, accurate search results with detailed case information that supports legal research and promotes judicial transparency.",
+      "We contributed to creating an accessible platform that democratizes access to legal information in Ghana. The open-source nature allows continuous community improvement while providing fast, accurate search results with detailed case information that supports legal research and promotes judicial transparency.",
   },
   {
     id: "best-in-print-academy",
