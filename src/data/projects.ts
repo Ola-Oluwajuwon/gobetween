@@ -115,6 +115,38 @@ export const projects: Project[] = [
       "We contributed to creating an accessible platform that democratizes access to legal information in Ghana. The open-source nature allows continuous community improvement while providing fast, accurate search results with detailed case information that supports legal research and promotes judicial transparency.",
   },
   {
+    id: "recipe-finder-app",
+    title: "Recipe Finder App",
+    shortDescription:
+      "Food recipe finder that helps users discover and save recipes from various cuisines.",
+    category: "Food Recipe Finder",
+    image: "/portfolio/portfolio-06-recipe.png",
+    featured: true,
+    liveUrl: "",
+    technologies: [
+      "Expo Go",
+      "React Native",
+      "TypeScript",
+      "RESTful APIs",
+      "CSS-in-JS",
+    ],
+    duration: "2 months",
+    role: "Mobile App & Backend Developer",
+    screenshots: [
+      "/portfolio/portfolio-06-recipe-01.png",
+      "/portfolio/portfolio-06-recipe-02.png",
+      "/portfolio/portfolio-06-recipe-03.png",
+    ],
+    fullDescription:
+      "The Recipe Finder App is a mobile application that helps food enthusiasts discover, and save recipes from various cuisines around the world. The app features a user-friendly interface for searching recipes by ingredients, cuisine type, dietary preferences, and cooking time. Users can create personal recipe collections, rate recipes, and share their favorite dishes with friends.",
+    challenge:
+      "Food lovers often struggle to find recipes that match their dietary needs and preferences.",
+    solution:
+      "Developed a device-agnostic mobile app using React Native and Expo Go that integrates with multiple recipe APIs to provide a vast database of recipes. Implemented advanced search filters, user authentication for personalized recipe collections.",
+    outcome:
+      "The Recipe Finder App was successfully completed, but was not deployed. The app however, has the potential of helping users discover and save recipes tailored to their dietary needs and preferences.",
+  },
+  {
     id: "best-in-print-academy",
     title: "Best In Print Academy",
     shortDescription:
