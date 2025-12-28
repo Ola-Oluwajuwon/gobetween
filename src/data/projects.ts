@@ -64,17 +64,17 @@ export const projects: Project[] = [
       "Cloud Storage",
       "Payment Integration",
     ],
-    duration: "1 months",
+    duration: "1 month",
     role: "Next.js Developer",
     screenshots: [
+      "/portfolio/portfolio-05-ourproperty.png",
       "/portfolio/portfolio-05-ourproperty-01.png",
       "/portfolio/portfolio-05-ourproperty-02.png",
-      "/portfolio/portfolio-05-ourproperty-03.png",
     ],
     fullDescription:
       "Our Property NG is a comprehensive property technology platform designed to digitize and automate real estate and property management operations across Nigeria. The software serves property managers, developers, and hospitality managers with features including tenant management, payment automation, custom branding, mobile apps, and analytics—currently managing 1.65M+ properties across 5,700+ companies.",
     challenge:
-      "Real estate professionals in Nigeria were drowning in paperwork and manual processes, struggling to efficiently manage properties, tenants, landlords, payments, and staff coordination. Traditional methods were time-consuming, error-prone, and limited business scalability across multiple properties and locations.",
+      "The Founder and Project Manager needed more developers to accelerate the development of the product prototype to meet MVP deadlines. The challenge was to quickly onboard and integrate new developers into an existing agile team, ensuring they understood the complex requirements of property management software while maintaining high code quality and collaboration within the team.",
     solution:
       "Built a fully customizable cloud-based platform with role-based access control, automated payment collection, custom domain integration, mobile applications for tenants and managers, visitor management systems, and comprehensive dashboards. The platform includes features for property listings, tenant onboarding, maintenance tracking, document management, and real-time notifications.",
     outcome:
@@ -89,14 +89,6 @@ export const projects: Project[] = [
     image: "/portfolio/portfolio-04-opensource-01.png",
     featured: true,
     githubUrl: "https://github.com/Sunkanmi1/SCC-WEBAPP",
-    fullDescription:
-      "The Supreme Court Cases (SCC) Web App is an open-source platform providing a comprehensive, searchable database of Supreme Court cases in Ghana. Built for Global Open Initiative Foundation (GOiF), it queries Wikidata to provide detailed case information including citations, courts, judges, and majority opinions.",
-    challenge:
-      "Legal professionals, students, and citizens in Ghana lacked easy access to Supreme Court case information. Existing resources were fragmented, difficult to search, and not optimized for modern web experiences, creating barriers to legal research and transparency.",
-    solution:
-      "Developed a modern, responsive web application with an elegant search interface, real-time search results, comprehensive case data display, and accessibility features. The platform integrates with Wikidata's extensive legal database and presents information in an intuitive, user-friendly format with smooth animations and micro-interactions.",
-    outcome:
-      "Created an accessible platform that democratizes access to legal information in Ghana. The open-source nature allows continuous community improvement while providing fast, accurate search results with detailed case information that supports legal research and promotes judicial transparency.",
     technologies: [
       "React",
       "TypeScript",
@@ -106,13 +98,21 @@ export const projects: Project[] = [
       "Wikidata API",
       "CSS3",
     ],
-    duration: "3 months",
-    role: "Frontend Developer",
+    duration: "1 week",
+    role: "Fullstack Developer",
     screenshots: [
       "/api/placeholder/1200/800",
       "/api/placeholder/1200/800",
       "/api/placeholder/1200/800",
     ],
+    fullDescription:
+      "The Supreme Court Cases (SCC) Web App is an open-source platform providing a comprehensive, searchable database of Supreme Court cases in Ghana. Built for Global Open Initiative Foundation (GOiF), it queries Wikidata to provide detailed case information including citations, courts, judges, and majority opinions.",
+    challenge:
+      "Legal professionals, students, and citizens in Ghana lacked easy access to Supreme Court case information. Existing resources were fragmented, difficult to search, and not optimized for modern web experiences, creating barriers to legal research and transparency.",
+    solution:
+      "Developed a modern, responsive web application with an elegant search interface, real-time search results, comprehensive case data display, and accessibility features. The platform integrates with Wikidata's extensive legal database and presents information in an intuitive, user-friendly format with smooth animations and micro-interactions.",
+    outcome:
+      "Created an accessible platform that democratizes access to legal information in Ghana. The open-source nature allows continuous community improvement while providing fast, accurate search results with detailed case information that supports legal research and promotes judicial transparency.",
   },
   {
     id: "best-in-print-academy",
