@@ -191,29 +191,29 @@ export const projects: Project[] = [
     image: "/portfolio/portfolio-02-subeb.png",
     featured: true,
     liveUrl: "https://subeb.besttechnologiesltd.com/",
-    fullDescription:
-      "SUBEB is a comprehensive result management platform designed to help schools and educational institutions automate result uploads, performance tracking, and academic reporting. The system provides a secure, centralized dashboard for managing student results across multiple classes, terms, and subjects.",
-    challenge:
-      "Schools and educational institutions were managing student results using scattered spreadsheets, leading to data inconsistencies, manual errors, security concerns, and difficulty tracking performance trends across terms and classes.",
-    solution:
-      "Built a secure web platform with role-based access control, bulk result upload functionality, real-time validation, automated report generation, and comprehensive analytics dashboard. The system includes workflow management for result approval, audit trails, and encrypted data storage.",
-    outcome:
-      "Transformed result management from manual spreadsheets to an automated, secure system. Schools can now upload results 5x faster, track performance trends in real-time, generate instant reports, and maintain complete data security with automatic backups and encryption.",
     technologies: [
       "Next.js",
       "TypeScript",
-      "PostgreSQL",
       "Tailwind CSS",
-      "Node.js",
       "Excel Integration",
+      "PostgreSQL",
+      "NestJS & Node.js",
     ],
-    duration: "4 months",
-    role: "Lead Full-Stack Developer",
+    duration: "2 months",
+    role: "Frontend Developer",
     screenshots: [
-      "/api/placeholder/1200/800",
-      "/api/placeholder/1200/800",
-      "/api/placeholder/1200/800",
+      "/portfolio/portfolio-02-subeb.png",
+      // "/api/placeholder/1200/800",
+      // "/api/placeholder/1200/800",
     ],
+    fullDescription:
+      "SUBEB is a comprehensive result management platform designed to help government schools at state level in Nigeria (State Universal Basic Education Boards). Features include automated result uploads, performance tracking, and academic reporting. The system provides a secure, centralized dashboard for managing student results across multiple classes, terms, and subjects for each state.",
+    challenge:
+      "Schools and educational institutions were managing student results using scattered spreadsheets, leading to data inconsistencies, manual errors, security concerns, and difficulty tracking performance trends across terms and classes by the SUBEB body.",
+    solution:
+      "Built a secure web platform with role-based access control, bulk result upload functionality, real-time validation, automated report generation, and comprehensive analytics dashboard to guide state governments to make data-driven decisions about public schools.",
+    outcome:
+      "Transformed result management from manual spreadsheets to an automated, secure system. Schools can now upload results 5x faster, and SUBEB officers can track performance trends in real-time, generate instant reports, and maintain complete data security with automatic backups and encryption.",
   },
   {
     id: "smarteduhub",
