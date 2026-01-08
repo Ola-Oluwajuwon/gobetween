@@ -10,7 +10,7 @@ import Link from "next/link";
 //   BarChart3,
 //   Users,
 // } from "lucide-react";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 
 // const services = [
 //   {
