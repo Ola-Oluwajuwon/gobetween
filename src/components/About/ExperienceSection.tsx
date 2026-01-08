@@ -1,52 +1,61 @@
-"use client"
+"use client";
 
-import { motion } from 'framer-motion'
-import { Briefcase, Calendar, MapPin, ExternalLink } from 'lucide-react'
+import { motion } from "framer-motion";
+import { Briefcase, Calendar, MapPin, ExternalLink } from "lucide-react";
 
 const experiences = [
   {
     id: 1,
-    title: 'Senior Full-Stack Developer',
-    company: 'TechCorp Solutions',
-    period: '2022 - Present',
-    location: 'Remote',
-    description: 'Leading development of enterprise web applications using React, Node.js, and cloud technologies. Mentoring junior developers and implementing best practices.',
+    title: "Senior Full-Stack Developer",
+    company: "TechCorp Solutions",
+    period: "2022 - Present",
+    location: "Remote",
+    description:
+      "Leading development of enterprise web applications using React, Node.js, and cloud technologies. Mentoring junior developers and implementing best practices.",
     achievements: [
-      'Led a team of 5 developers on a major e-commerce platform',
-      'Improved application performance by 40% through optimization',
-      'Implemented CI/CD pipelines reducing deployment time by 60%'
+      "Led a team of 5 developers on a major e-commerce platform",
+      "Improved application performance by 40% through optimization",
+      "Implemented CI/CD pipelines reducing deployment time by 60%",
     ],
-    tech: ['React', 'Node.js', 'TypeScript', 'AWS', 'Docker']
+    tech: ["React", "Node.js", "TypeScript", "AWS", "Docker"],
   },
   {
     id: 2,
-    title: 'Frontend Developer',
-    company: 'Digital Innovations Inc.',
-    period: '2020 - 2022',
-    location: 'San Francisco, CA',
-    description: 'Developed responsive web applications and collaborated with design teams to create intuitive user experiences.',
+    title: "Frontend Developer",
+    company: "Digital Innovations Inc.",
+    period: "2020 - 2022",
+    location: "San Francisco, CA",
+    description:
+      "Developed responsive web applications and collaborated with design teams to create intuitive user experiences.",
     achievements: [
-      'Built 10+ client websites with 99.9% uptime',
-      'Reduced bundle size by 30% through code optimization',
-      'Implemented accessibility features improving WCAG compliance'
+      "Built 10+ client websites with 99.9% uptime",
+      "Reduced bundle size by 30% through code optimization",
+      "Implemented accessibility features improving WCAG compliance",
     ],
-    tech: ['React', 'Vue.js', 'Sass', 'Webpack', 'Jest']
+    tech: ["React", "Vue.js", "Sass", "Webpack", "Jest"],
   },
   {
     id: 3,
-    title: 'UI/UX Designer & Developer',
-    company: 'Creative Studio',
-    period: '2018 - 2020',
-    location: 'New York, NY',
-    description: 'Combined design and development skills to create comprehensive digital solutions for clients across various industries.',
+    title: "UI/UX Designer & Developer",
+    company: "Creative Studio",
+    period: "2018 - 2020",
+    location: "New York, NY",
+    description:
+      "Combined design and development skills to create comprehensive digital solutions for clients across various industries.",
     achievements: [
-      'Designed and developed 15+ brand websites',
-      'Created design systems for 3 major brands',
-      'Increased client conversion rates by 25%'
+      "Designed and developed 15+ brand websites",
+      "Created design systems for 3 major brands",
+      "Increased client conversion rates by 25%",
     ],
-    tech: ['Figma', 'Adobe Creative Suite', 'HTML/CSS', 'JavaScript', 'WordPress']
-  }
-]
+    tech: [
+      "Figma",
+      "Adobe Creative Suite",
+      "HTML/CSS",
+      "JavaScript",
+      "WordPress",
+    ],
+  },
+];
 
 export default function ExperienceSection() {
   return (
@@ -65,8 +74,8 @@ export default function ExperienceSection() {
               Work <span className="gradient-text">Experience</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              My professional journey in the tech industry, showcasing growth, 
-              achievements, and the diverse projects I've contributed to.
+              My professional journey in the tech industry, showcasing growth,
+              achievements, and the diverse projects I&apos;ve contributed to.
             </p>
           </motion.div>
 
@@ -117,7 +126,10 @@ export default function ExperienceSection() {
                         </div>
                       </div>
                       <div className="flex gap-2">
-                        <a href="#" className="text-primary hover:text-primary/80 transition-colors">
+                        <a
+                          href="#"
+                          className="text-primary hover:text-primary/80 transition-colors"
+                        >
                           <ExternalLink className="h-4 w-4" />
                         </a>
                       </div>
@@ -129,14 +141,21 @@ export default function ExperienceSection() {
 
                     {/* Achievements */}
                     <div className="mb-4">
-                      <h4 className="font-semibold text-sm text-foreground mb-2">Key Achievements:</h4>
+                      <h4 className="font-semibold text-sm text-foreground mb-2">
+                        Key Achievements:
+                      </h4>
                       <ul className="space-y-1">
-                        {experience.achievements.map((achievement, achievementIndex) => (
-                          <li key={achievementIndex} className="text-sm text-muted-foreground flex items-start gap-2">
-                            <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
-                            {achievement}
-                          </li>
-                        ))}
+                        {experience.achievements.map(
+                          (achievement, achievementIndex) => (
+                            <li
+                              key={achievementIndex}
+                              className="text-sm text-muted-foreground flex items-start gap-2"
+                            >
+                              <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
+                              {achievement}
+                            </li>
+                          )
+                        )}
                       </ul>
                     </div>
 
@@ -169,20 +188,21 @@ export default function ExperienceSection() {
               Ready for New Challenges
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
-              I'm always excited to take on new projects and opportunities. 
-              Whether it's building something from scratch or improving existing systems, 
-              I'm ready to contribute my skills and experience.
+              I&apos;m always excited to take on new projects and opportunities.
+              Whether it&apos;s building something from scratch or improving
+              existing systems, I&apos;m ready to contribute my skills and
+              experience.
             </p>
             <a
               href="/contact"
               className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors"
             >
-              Let's discuss your project
+              Let&apos;s discuss your project
               <ExternalLink className="h-4 w-4" />
             </a>
           </motion.div>
         </div>
       </div>
     </section>
-  )
+  );
 }

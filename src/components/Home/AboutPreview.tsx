@@ -1,15 +1,23 @@
-"use client"
+"use client";
 
-import { motion } from 'framer-motion'
-import Link from 'next/link'
-import { Button } from '@/components/ui/Button'
-import { ArrowRight, Code, Palette, Zap } from 'lucide-react'
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { Button } from "@/components/ui/Button";
+import { ArrowRight, Code, Palette, Zap } from "lucide-react";
 
 const skills = [
-  { name: 'Web Development', icon: Code, description: 'React, Next.js, TypeScript' },
-  { name: 'UI/UX Design', icon: Palette, description: 'Figma, Tailwind, Framer Motion' },
-  { name: 'Automation', icon: Zap, description: 'Node.js, APIs, DevOps' },
-]
+  {
+    name: "Web Development",
+    icon: Code,
+    description: "React, Next.js, TypeScript",
+  },
+  {
+    name: "UI/UX Design",
+    icon: Palette,
+    description: "Figma, Tailwind, Framer Motion",
+  },
+  { name: "Automation", icon: Zap, description: "Node.js, APIs, DevOps" },
+];
 
 export default function AboutPreview() {
   return (
@@ -27,18 +35,20 @@ export default function AboutPreview() {
             >
               <div className="space-y-4">
                 <h2 className="text-3xl md:text-4xl font-bold">
-                  Crafting Digital Experiences with{' '}
+                  Crafting Digital Experiences with{" "}
                   <span className="gradient-text">Passion & Precision</span>
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  I'm a full-stack developer and designer with over 5 years of experience 
-                  creating innovative digital solutions. My approach combines technical expertise 
-                  with creative problem-solving to deliver exceptional user experiences.
+                  I&apos;m a full-stack developer and designer with over 5 years
+                  of experience creating innovative digital solutions. My
+                  approach combines technical expertise with creative
+                  problem-solving to deliver exceptional user experiences.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  From concept to deployment, I work closely with clients to understand their 
-                  vision and transform it into reality. Every project is an opportunity to push 
-                  boundaries and create something remarkable.
+                  From concept to deployment, I work closely with clients to
+                  understand their vision and transform it into reality. Every
+                  project is an opportunity to push boundaries and create
+                  something remarkable.
                 </p>
               </div>
 
@@ -55,7 +65,9 @@ export default function AboutPreview() {
                   >
                     <skill.icon className="h-8 w-8 mx-auto mb-2 text-primary" />
                     <h3 className="font-semibold text-sm mb-1">{skill.name}</h3>
-                    <p className="text-xs text-muted-foreground">{skill.description}</p>
+                    <p className="text-xs text-muted-foreground">
+                      {skill.description}
+                    </p>
                   </motion.div>
                 ))}
               </div>
@@ -91,7 +103,7 @@ export default function AboutPreview() {
                   </div>
                 </div>
               </div>
-              
+
               {/* Floating elements */}
               <div className="absolute -top-4 -right-4 w-16 h-16 bg-primary/10 rounded-full blur-xl" />
               <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-primary/5 rounded-full blur-xl" />
@@ -100,5 +112,5 @@ export default function AboutPreview() {
         </div>
       </div>
     </section>
-  )
+  );
 }

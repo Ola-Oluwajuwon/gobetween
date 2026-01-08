@@ -1,75 +1,82 @@
-"use client"
+"use client";
 
-import { motion } from 'framer-motion'
-import { Code, Palette, Database, Cloud, Smartphone, Globe } from 'lucide-react'
+import { motion } from "framer-motion";
+import {
+  Code,
+  Palette,
+  Database,
+  Cloud,
+  Smartphone,
+  Globe,
+} from "lucide-react";
 
 const skillCategories = [
   {
-    name: 'Frontend Development',
+    name: "Frontend Development",
     icon: Code,
     skills: [
-      { name: 'React', level: 95 },
-      { name: 'Next.js', level: 90 },
-      { name: 'TypeScript', level: 88 },
-      { name: 'Tailwind CSS', level: 92 },
-      { name: 'HTML/CSS', level: 95 },
-    ]
+      { name: "React", level: 95 },
+      { name: "Next.js", level: 90 },
+      { name: "TypeScript", level: 88 },
+      { name: "Tailwind CSS", level: 92 },
+      { name: "HTML/CSS", level: 95 },
+    ],
   },
   {
-    name: 'Backend Development',
+    name: "Backend Development",
     icon: Database,
     skills: [
-      { name: 'Node.js', level: 85 },
-      { name: 'Express.js', level: 80 },
-      { name: 'Python', level: 75 },
-      { name: 'PostgreSQL', level: 80 },
-      { name: 'MongoDB', level: 75 },
-    ]
+      { name: "Node.js", level: 85 },
+      { name: "Express.js", level: 80 },
+      { name: "Python", level: 75 },
+      { name: "PostgreSQL", level: 80 },
+      { name: "MongoDB", level: 75 },
+    ],
   },
   {
-    name: 'UI/UX Design',
+    name: "UI/UX Design",
     icon: Palette,
     skills: [
-      { name: 'Figma', level: 85 },
-      { name: 'Adobe XD', level: 80 },
-      { name: 'Prototyping', level: 90 },
-      { name: 'User Research', level: 75 },
-      { name: 'Design Systems', level: 85 },
-    ]
+      { name: "Figma", level: 85 },
+      { name: "Adobe XD", level: 80 },
+      { name: "Prototyping", level: 90 },
+      { name: "User Research", level: 75 },
+      { name: "Design Systems", level: 85 },
+    ],
   },
   {
-    name: 'DevOps & Tools',
+    name: "DevOps & Tools",
     icon: Cloud,
     skills: [
-      { name: 'Git', level: 90 },
-      { name: 'Docker', level: 75 },
-      { name: 'AWS', level: 70 },
-      { name: 'CI/CD', level: 80 },
-      { name: 'Linux', level: 75 },
-    ]
+      { name: "Git", level: 90 },
+      { name: "Docker", level: 75 },
+      { name: "AWS", level: 70 },
+      { name: "CI/CD", level: 80 },
+      { name: "Linux", level: 75 },
+    ],
   },
   {
-    name: 'Mobile Development',
+    name: "Mobile Development",
     icon: Smartphone,
     skills: [
-      { name: 'React Native', level: 75 },
-      { name: 'Progressive Web Apps', level: 85 },
-      { name: 'Mobile UI/UX', level: 80 },
-      { name: 'App Store Guidelines', level: 70 },
-    ]
+      { name: "React Native", level: 75 },
+      { name: "Progressive Web Apps", level: 85 },
+      { name: "Mobile UI/UX", level: 80 },
+      { name: "App Store Guidelines", level: 70 },
+    ],
   },
   {
-    name: 'Other Skills',
+    name: "Other Skills",
     icon: Globe,
     skills: [
-      { name: 'REST APIs', level: 90 },
-      { name: 'GraphQL', level: 75 },
-      { name: 'Testing', level: 80 },
-      { name: 'Performance Optimization', level: 85 },
-      { name: 'SEO', level: 75 },
-    ]
-  }
-]
+      { name: "REST APIs", level: 90 },
+      { name: "GraphQL", level: 75 },
+      { name: "Testing", level: 80 },
+      { name: "Performance Optimization", level: 85 },
+      { name: "SEO", level: 75 },
+    ],
+  },
+];
 
 export default function SkillsSection() {
   return (
@@ -88,8 +95,8 @@ export default function SkillsSection() {
               My <span className="gradient-text">Skills</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A comprehensive overview of my technical skills and expertise across various 
-              domains of web development and design.
+              A comprehensive overview of my technical skills and expertise
+              across various domains of web development and design.
             </p>
           </motion.div>
 
@@ -115,8 +122,12 @@ export default function SkillsSection() {
                   {category.skills.map((skill, skillIndex) => (
                     <div key={skill.name} className="space-y-2">
                       <div className="flex justify-between items-center">
-                        <span className="text-sm font-medium">{skill.name}</span>
-                        <span className="text-sm text-muted-foreground">{skill.level}%</span>
+                        <span className="text-sm font-medium">
+                          {skill.name}
+                        </span>
+                        <span className="text-sm text-muted-foreground">
+                          {skill.level}%
+                        </span>
                       </div>
                       <div className="w-full bg-muted rounded-full h-2">
                         <motion.div
@@ -146,13 +157,14 @@ export default function SkillsSection() {
               Always Learning & Growing
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Technology evolves rapidly, and I'm committed to staying current with the latest 
-              trends and best practices. I regularly participate in workshops, conferences, 
-              and contribute to open-source projects to expand my knowledge.
+              Technology evolves rapidly, and I&apos;m committed to staying
+              current with the latest trends and best practices. I regularly
+              participate in workshops, conferences, and contribute to
+              open-source projects to expand my knowledge.
             </p>
           </motion.div>
         </div>
       </div>
     </section>
-  )
+  );
 }

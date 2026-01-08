@@ -28,10 +28,10 @@ export default function AboutHero() {
                   About <span className="gradient-text">Me</span>
                 </h1>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  I'm a passionate full-stack developer and designer with a love
-                  for creating exceptional digital experiences. My journey in
-                  tech started over 5 years ago, and I've been fortunate to work
-                  on diverse projects that have shaped my expertise.
+                  I&apos;m a passionate full-stack developer and designer with a
+                  love for creating exceptional digital experiences. My journey
+                  in tech started over 5 years ago, and I&apos;ve been fortunate
+                  to work on diverse projects that have shaped my expertise.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   I believe in the power of clean code, intuitive design, and
@@ -40,7 +40,7 @@ export default function AboutHero() {
                   that makes a difference.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  When I'm not coding, you'll find me exploring new
+                  When I&apos;m not coding, you&apos;ll find me exploring new
                   technologies, contributing to open source, or sharing
                   knowledge with the developer community.
                 </p>

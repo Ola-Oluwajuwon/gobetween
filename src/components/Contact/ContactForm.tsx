@@ -1,41 +1,43 @@
-"use client"
+"use client";
 
-import { useState } from 'react'
-import { motion } from 'framer-motion'
-import { Button } from '@/components/ui/Button'
-import { Send, CheckCircle } from 'lucide-react'
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/Button";
+import { Send, CheckCircle } from "lucide-react";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  })
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [isSubmitted, setIsSubmitted] = useState(false)
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData(prev => ({ ...prev, [name]: value }))
-  }
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    
+    e.preventDefault();
+    setIsSubmitting(true);
+
     // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000))
-    
-    setIsSubmitting(false)
-    setIsSubmitted(true)
-    
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+
+    setIsSubmitting(false);
+    setIsSubmitted(true);
+
     // Reset form after 3 seconds
     setTimeout(() => {
-      setIsSubmitted(false)
-      setFormData({ name: '', email: '', subject: '', message: '' })
-    }, 3000)
-  }
+      setIsSubmitted(false);
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    }, 3000);
+  };
 
   if (isSubmitted) {
     return (
@@ -49,10 +51,10 @@ export default function ContactForm() {
         </div>
         <h3 className="text-2xl font-bold mb-2">Message Sent!</h3>
         <p className="text-muted-foreground">
-          Thank you for reaching out. I'll get back to you within 24 hours.
+          Thank you for reaching out. I&apos;ll get back to you within 24 hours.
         </p>
       </motion.div>
-    )
+    );
   }
 
   return (
@@ -65,7 +67,8 @@ export default function ContactForm() {
       <div className="mb-8">
         <h2 className="text-2xl font-bold mb-2">Send me a message</h2>
         <p className="text-muted-foreground">
-          Fill out the form below and I'll get back to you as soon as possible.
+          Fill out the form below and I&apos;ll get back to you as soon as
+          possible.
         </p>
       </div>
 
@@ -162,5 +165,5 @@ export default function ContactForm() {
         </p>
       </div>
     </motion.div>
-  )
+  );
 }

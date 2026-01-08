@@ -34,7 +34,8 @@ export default function ServicesHero() {
               </p>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Whether you need a stunning website, a powerful application, or
-                automated workflows, I'm here to turn your vision into reality.
+                automated workflows, I&apos;m here to turn your vision into
+                reality.
               </p>
             </div>
 

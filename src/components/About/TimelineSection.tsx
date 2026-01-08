@@ -157,11 +157,12 @@ export default function TimelineSection() {
             </div>
             <h3 className="text-2xl font-bold mb-4">Looking Forward</h3>
             <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              As I continue my journey in tech, I'm excited about the
-              opportunities ahead. I'm passionate about emerging technologies
-              like AI, machine learning, and sustainable development practices.
-              My goal is to not only build great products but also contribute to
-              making technology more accessible and beneficial for everyone.
+              As I continue my journey in tech, I&apos;m excited about the
+              opportunities ahead. I&apos;m passionate about emerging
+              technologies like AI, machine learning, and sustainable
+              development practices. My goal is to not only build great products
+              but also contribute to making technology more accessible and
+              beneficial for everyone.
             </p>
           </motion.div>
         </div>

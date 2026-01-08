@@ -80,8 +80,8 @@ export default function SkillsSection() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"
           >
-            I've worked with a wide range of technologies and tools to create
-            exceptional digital experiences.
+            I&apos;ve worked with a wide range of technologies and tools to
+            create exceptional digital experiences.
           </motion.p>
         </div>
 

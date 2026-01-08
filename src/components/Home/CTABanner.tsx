@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { motion } from 'framer-motion'
-import Link from 'next/link'
-import { Button } from '@/components/ui/Button'
-import { Download, Mail, ArrowRight } from 'lucide-react'
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { Button } from "@/components/ui/Button";
+import { Download, Mail, ArrowRight } from "lucide-react";
 
 export default function CTABanner() {
   return (
@@ -25,12 +25,13 @@ export default function CTABanner() {
             {/* Content */}
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold">
-                Ready to Start Your Next{' '}
+                Ready to Start Your Next{" "}
                 <span className="gradient-text">Project?</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Let's collaborate to bring your ideas to life. Whether you need a website, 
-                application, or design solution, I'm here to help you succeed.
+                Let&apos;s collaborate to bring your ideas to life. Whether you
+                need a website, application, or design solution, I&apos;m here
+                to help you succeed.
               </p>
             </div>
 
@@ -43,7 +44,7 @@ export default function CTABanner() {
               <Link href="/contact">
                 <Button variant="outline" size="lg" className="group">
                   <Mail className="mr-2 h-4 w-4" />
-                  Let's Talk
+                  Let&apos;s Talk
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
@@ -53,16 +54,28 @@ export default function CTABanner() {
             <div className="pt-8 border-t border-primary/20">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-primary mb-2">24/7</div>
-                  <div className="text-sm text-muted-foreground">Response Time</div>
+                  <div className="text-2xl font-bold text-primary mb-2">
+                    24/7
+                  </div>
+                  <div className="text-sm text-muted-foreground">
+                    Response Time
+                  </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-primary mb-2">100%</div>
-                  <div className="text-sm text-muted-foreground">Satisfaction</div>
+                  <div className="text-2xl font-bold text-primary mb-2">
+                    100%
+                  </div>
+                  <div className="text-sm text-muted-foreground">
+                    Satisfaction
+                  </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-primary mb-2">Free</div>
-                  <div className="text-sm text-muted-foreground">Consultation</div>
+                  <div className="text-2xl font-bold text-primary mb-2">
+                    Free
+                  </div>
+                  <div className="text-sm text-muted-foreground">
+                    Consultation
+                  </div>
                 </div>
               </div>
             </div>
@@ -70,5 +83,5 @@ export default function CTABanner() {
         </div>
       </div>
     </section>
-  )
+  );
 }
